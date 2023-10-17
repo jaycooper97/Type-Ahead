@@ -26,7 +26,7 @@ const cities = [];  /*Array for cities to be pushed into*/
 
 
 
-//gives me array of cities
+//gives me an array of cities
 fetch(endpoint)
 .then(blob => blob.json())
 .then(data => cities.push(...data));  //use the spread (...) operator to spread out the cities in one array
